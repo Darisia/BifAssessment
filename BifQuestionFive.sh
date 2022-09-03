@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script contains the code for the programmes created to answer question Two of the Assessment
+# This script contains the code for the programmes created to answer question Five of the Assessment
 # All output files created for this question will be stored in the current working direction as well as printed to standard output
 
 ## Workflow for the diversity analysis of the given amplicon sequences
@@ -23,7 +23,7 @@ qiime tools import \
 --output-path metagenomicsretry.qza \
 --type 'SampleData[Sequences]'
 
-# performed repreplication of sequences
+# performed depreplication of sequences
 qiime vsearch dereplicate-sequences \
 --i-sequences metagenomicsretry.qza \
 --o-dereplicated-table table.qza \

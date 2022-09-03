@@ -11,6 +11,8 @@
 # Bowtie2
 # checkm
 
+# Once I get files to download I will still run the pipeline and update the github repository with the results generated
+
 ## Sequence quality control and trimming if neccessary
 
 ## Prior to input into the megahit tool:

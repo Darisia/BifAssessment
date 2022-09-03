@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script contains the code for the programmes created to answer question Two of the Assessment
+# This script contains the code for the programmes created to answer question Four of the Assessment
 # All output files created for this question will be stored in the directory specified by user (by me - for this question)
 
 ## Workflow for the assembly of the given bacterial genome sequence files
@@ -12,7 +12,7 @@
 ## Code run from the command line to assemble this bacterial genome
 # Note: Sequence files downloaded and stored in "~/Downloads/"
 unicycler -1 MiSeq_Ecoli_MG1655_50x_R1.fastq \
--2 MiSeq_Ecoli_MG1655_50x_R1.fastq \
+-2 MiSeq_Ecoli_MG1655_50x_R2.fastq \
 -o assembly/ \
 --verbosity 2
 # All output files will be stored in the created "assembly" folder within my current working environment

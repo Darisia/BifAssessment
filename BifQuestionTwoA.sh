@@ -7,8 +7,12 @@
 # Programme searches the input DNA sequence file for a set of patterns and returns the number of times the n-mer exists in the file
 for kmer in $2
 do
-  cat $1 | awk -F $kmer '{ print (length > 0 ? NF - 1 : 0) }' >> ./kmerFind.output
+  cat $1 \
+  | awk -F $kmer '{ print (length > 0 ? NF - 1 : 0) }' \
+  >> ./kmerCount
+  echo $kmer >> kmerSeq
 done
+paste kmerSeq kmerCount >> kmerFind.output
 cat ./kmerFind.output
 
 # Call the script - the DNA sequence file will be read in as argument one and argument two will be the kmers to search - see example below:
